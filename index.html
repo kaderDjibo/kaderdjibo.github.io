@@ -51,6 +51,80 @@
       color: #020617;
     }
 
+    /* TOP NAVBAR */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(2, 6, 23, 0.92);
+      border-bottom: 1px solid rgba(55, 65, 81, 0.9);
+    }
+
+    .navbar-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-brand {
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.82rem;
+    }
+
+    .nav-link {
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .nav-link:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(15, 23, 42, 0.9);
+      transform: translateY(-1px);
+    }
+
+    .nav-link-primary {
+      border-color: rgba(55, 65, 81, 0.9);
+      background: rgba(15, 23, 42, 0.95);
+      color: #f9fafb;
+    }
+
+    .nav-link-primary:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    @media (max-width: 700px) {
+      .nav-brand {
+        font-size: 0.8rem;
+      }
+      .nav-links {
+        font-size: 0.78rem;
+      }
+    }
+
+    /* PAGE LAYOUT */
+
     .page {
       max-width: 1120px;
       margin: 0 auto;
@@ -294,6 +368,25 @@
 
     .section-body strong {
       color: #f9fafb;
+    }
+
+    .section-footer {
+      margin-top: 14px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .next-link {
+      font-size: 0.8rem;
+      color: var(--accent-2);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .next-link span {
+      font-size: 0.85rem;
     }
 
     /* TIMELINE */
@@ -574,7 +667,22 @@
   </style>
 </head>
 <body>
-  <main class="page">
+
+  <!-- TOP NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="nav-brand">DJIBO KADER · DATA ANALYTICS &amp; ML</div>
+      <nav class="nav-links">
+        <a href="#top" class="nav-link nav-link-primary">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page" id="top">
     <!-- LEFT COLUMN -->
     <section>
       <!-- HERO -->
@@ -602,11 +710,11 @@
         </div>
 
         <div class="hero-actions">
-          <a href="YOUR_RESUME_LINK.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-            Download Resume →
+          <a href="#projects" class="btn btn-primary">
+            View Data Projects →
           </a>
-          <a href="#projects" class="btn btn-ghost">
-            View Projects
+          <a href="#about" class="btn btn-ghost">
+            Next: About me →
           </a>
         </div>
 
@@ -627,7 +735,7 @@
 
         <div class="hero-scroll">
           <span>↓</span>
-          Scroll to see education, skills &amp; projects
+          Scroll or use the menu to move through sections
         </div>
       </header>
 
@@ -655,10 +763,13 @@
               work with real‑world datasets, and contribute to a team that cares about both technical quality and clear communication.
             </p>
           </div>
+          <div class="section-footer">
+            <a href="#education" class="next-link">Next: Education &amp; Experience <span>→</span></a>
+          </div>
         </section>
 
         <!-- EDUCATION & EXPERIENCE -->
-        <section class="section">
+        <section class="section" id="education">
           <div class="section-header">
             <h2 class="section-title">Education &amp; Experience</h2>
             <div class="section-kicker">How I built my foundation</div>
@@ -692,6 +803,9 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="section-footer">
+            <a href="#skills" class="next-link">Next: Skills <span>→</span></a>
           </div>
         </section>
 
@@ -756,6 +870,9 @@
               </div>
             </div>
           </div>
+          <div class="section-footer">
+            <a href="#projects" class="next-link">Next: Projects <span>→</span></a>
+          </div>
         </section>
 
         <!-- PROJECTS -->
@@ -770,7 +887,7 @@
             </p>
             <div class="projects-grid">
               <!-- HEART DISEASE PROJECT -->
-              <a class="project-card" href="YOUR_HEART_DISEASE_PROJECT_GITHUB_URL" target="_blank" rel="noopener">
+              <a class="project-card" href="https://github.com/kaderDjibo/heart-disease" target="_blank" rel="noopener">
                 <div class="project-tag">
                   <span>ML · Streamlit App</span>
                 </div>
@@ -784,14 +901,14 @@
                 </div>
               </a>
 
-              <!-- EXTRA PROJECTS (OPTIONAL) -->
-              <a class="project-card" href="YOUR_SECOND_PROJECT_GITHUB_URL" target="_blank" rel="noopener">
+              <!-- SECOND DATA PROJECT -->
+              <a class="project-card" href="https://github.com/kaderDjibo/BIG-DATA-ANALYSIS" target="_blank" rel="noopener">
                 <div class="project-tag">
                   <span>Data Analysis</span>
                 </div>
-                <h3 class="project-title">[Your second data project]</h3>
+                <h3 class="project-title">Big Data Analysis</h3>
                 <p class="project-desc">
-                  Briefly describe another project: what data you used, what questions you answered, and what insights or visuals you produced.
+                  Large-scale data analysis project focusing on cleaning, exploring, and visualizing big datasets to extract meaningful business insights.
                 </p>
                 <div class="project-meta">
                   <span class="project-stack">Python, pandas, Matplotlib/Seaborn</span>
@@ -799,25 +916,29 @@
                 </div>
               </a>
 
-              <a class="project-card" href="YOUR_THIRD_PROJECT_GITHUB_URL" target="_blank" rel="noopener">
+              <!-- SQL / BI PROJECT -->
+              <a class="project-card" href="https://github.com/kaderDjibo/supermarket" target="_blank" rel="noopener">
                 <div class="project-tag">
                   <span>SQL · Dashboard</span>
                 </div>
-                <h3 class="project-title">[Your SQL / BI project]</h3>
+                <h3 class="project-title">Supermarket Sales Dashboard</h3>
                 <p class="project-desc">
-                  Example: A dashboard or report using SQL and visual tools to analyze sales, customers, or any dataset of your choice.
+                  Analysis of supermarket sales data using SQL and visual tools to understand revenue, product performance, and customer patterns.
                 </p>
                 <div class="project-meta">
-                  <span class="project-stack">SQL, MySQL, [BI / plotting library]</span>
+                  <span class="project-stack">SQL, MySQL, BI / visualization tools</span>
                   <span class="project-link">View project →</span>
                 </div>
               </a>
             </div>
           </div>
+          <div class="section-footer">
+            <a href="#certs" class="next-link">Next: Certifications <span>→</span></a>
+          </div>
         </section>
 
         <!-- CERTIFICATIONS -->
-        <section class="section">
+        <section class="section" id="certs">
           <div class="section-header">
             <h2 class="section-title">Certifications &amp; Training</h2>
             <div class="section-kicker">Structured learning</div>
@@ -828,6 +949,9 @@
             <p><strong>Be 10X AI Course</strong> – exposure to applied AI tools and workflows</p>
             <p><strong>Internship Completion Certificate</strong> – Software Development Intern, Cognifyz Technologies</p>
           </div>
+          <div class="section-footer">
+            <a href="#contact" class="next-link">Next: Contact <span>→</span></a>
+          </div>
         </section>
       </div>
     </section>
@@ -835,7 +959,7 @@
     <!-- RIGHT COLUMN / SIDEBAR -->
     <aside class="sidebar">
       <!-- CONTACT -->
-      <section class="card">
+      <section class="card" id="contact">
         <div class="card-header">
           <h2 class="card-title">Contact</h2>
           <span class="card-pill">Let&apos;s connect</span>
@@ -875,7 +999,7 @@
         <div class="social-links">
           <a href="https://www.linkedin.com/in/djibo-abdoul-kader-8651a32ba/" target="_blank" rel="noopener" class="social-chip">LinkedIn</a>
           <a href="https://github.com/kaderDjibo" target="_blank" rel="noopener" class="social-chip">GitHub</a>
-          <a href="YOUR_KAGGLE_URL" target="_blank" rel="noopener" class="social-chip">Kaggle (optional)</a>
+          <a href="https://www.kaggle.com/kadson" target="_blank" rel="noopener" class="social-chip">Kaggle</a>
         </div>
       </section>
 
@@ -918,4 +1042,4 @@
     </aside>
   </main>
 </body>
-</html>Create index.html
+</html>index.html
