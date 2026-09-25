@@ -5,23 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Portfolio of Abdoul Kader Djibo M — Entry-level Data Analyst and AI/ML Enthusiast."
+    content="Graduate study and scholarship-focused portfolio of Abdoul Kader Djibo Magagi, Computer Applications graduate, Data Analyst, AI/ML enthusiast, and public-good technology builder from Niger."
   />
-  <title>Abdoul Kader Djibo M | Data Analyst & AI/ML Enthusiast</title>
+  <title>Abdoul Kader Djibo Magagi | Graduate Study & Scholarship Portfolio</title>
 
   <style>
     :root {
       --bg: #050816;
       --bg-alt: #0b1120;
       --card: #0f172a;
+      --card-soft: rgba(15, 23, 42, 0.88);
       --text: #e5e7eb;
       --muted: #9ca3af;
       --accent: #38bdf8;
       --accent-dark: #0369a1;
       --green: #22c55e;
       --orange: #f97316;
+      --yellow: #facc15;
+      --purple: #a855f7;
       --border: rgba(148, 163, 184, 0.28);
-      --max-width: 1100px;
+      --max-width: 1120px;
     }
 
     * {
@@ -36,9 +39,12 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #0b1120 0%, #020617 55%, #000 100%);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(34, 197, 94, 0.12), transparent 30%),
+        linear-gradient(180deg, #020617 0%, #050816 45%, #000 100%);
       color: var(--text);
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     a {
@@ -55,14 +61,12 @@
       margin: auto;
     }
 
-    /* Navigation */
-
     .navbar {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(2, 6, 23, 0.92);
-      backdrop-filter: blur(12px);
+      background: rgba(2, 6, 23, 0.94);
+      backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(148, 163, 184, 0.16);
     }
 
@@ -77,7 +81,7 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 11px;
       color: white;
     }
 
@@ -86,17 +90,19 @@
     }
 
     .brand-icon {
-      width: 36px;
-      height: 36px;
+      width: 38px;
+      height: 38px;
       border-radius: 50%;
-      background: radial-gradient(circle at 30% 20%, var(--accent), #0f172a 65%);
-      border: 1px solid rgba(148, 163, 184, 0.65);
-      box-shadow: 0 0 24px rgba(56, 189, 248, 0.45);
+      background:
+        radial-gradient(circle at 28% 22%, #67e8f9, transparent 25%),
+        linear-gradient(135deg, var(--accent), var(--green));
+      border: 1px solid rgba(226, 232, 240, 0.5);
+      box-shadow: 0 0 28px rgba(56, 189, 248, 0.45);
     }
 
     .brand-name {
       font-size: 0.88rem;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
@@ -116,7 +122,7 @@
     .nav-links a {
       color: var(--muted);
       padding: 7px 10px;
-      font-size: 0.83rem;
+      font-size: 0.82rem;
       border-radius: 999px;
     }
 
@@ -126,12 +132,10 @@
       text-decoration: none;
     }
 
-    /* Hero */
-
     .hero {
-      padding: 80px 0 45px;
+      padding: 78px 0 48px;
       display: grid;
-      grid-template-columns: 1.25fr 0.9fr;
+      grid-template-columns: 1.22fr 0.9fr;
       gap: 34px;
       align-items: center;
     }
@@ -143,7 +147,7 @@
       padding: 7px 13px;
       color: var(--accent);
       border: 1px solid rgba(56, 189, 248, 0.55);
-      background: rgba(15, 23, 42, 0.85);
+      background: rgba(15, 23, 42, 0.86);
       border-radius: 999px;
       font-size: 0.78rem;
       margin-bottom: 18px;
@@ -154,25 +158,25 @@
       height: 8px;
       border-radius: 50%;
       background: var(--green);
-      box-shadow: 0 0 12px var(--green);
+      box-shadow: 0 0 14px var(--green);
     }
 
     h1 {
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      line-height: 1.12;
-      letter-spacing: -0.05em;
-      margin-bottom: 16px;
+      font-size: clamp(2.25rem, 5vw, 3.65rem);
+      line-height: 1.1;
+      letter-spacing: -0.055em;
+      margin-bottom: 17px;
     }
 
     h1 span {
-      background: linear-gradient(to right, var(--accent), var(--green));
+      background: linear-gradient(to right, var(--accent), var(--green), var(--yellow));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
 
     .hero-text {
-      max-width: 680px;
+      max-width: 700px;
       color: var(--muted);
       font-size: 1rem;
       margin-bottom: 20px;
@@ -181,7 +185,8 @@
     .hero-tags,
     .tag-list,
     .profile-links,
-    .footer-links {
+    .footer-links,
+    .button-row {
       display: flex;
       flex-wrap: wrap;
       gap: 9px;
@@ -202,10 +207,7 @@
     }
 
     .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
 
     .button {
@@ -214,7 +216,7 @@
       justify-content: center;
       padding: 11px 18px;
       border-radius: 999px;
-      font-weight: 700;
+      font-weight: 800;
       font-size: 0.88rem;
       border: 1px solid transparent;
       transition: 0.2s ease;
@@ -237,6 +239,12 @@
       background: rgba(15, 23, 42, 0.9);
     }
 
+    .button-green {
+      color: #02140a;
+      background: linear-gradient(135deg, var(--green), #86efac);
+      box-shadow: 0 14px 28px rgba(34, 197, 94, 0.15);
+    }
+
     .hero-note {
       color: var(--muted);
       font-size: 0.82rem;
@@ -244,8 +252,9 @@
 
     .profile-card,
     .card,
-    .contact-card {
-      background: rgba(15, 23, 42, 0.88);
+    .contact-card,
+    .score-card {
+      background: var(--card-soft);
       border: 1px solid var(--border);
       border-radius: 16px;
       box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
@@ -254,7 +263,8 @@
     .profile-card {
       padding: 24px;
       background:
-        radial-gradient(circle at top right, rgba(56, 189, 248, 0.14), transparent 40%),
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.16), transparent 42%),
+        radial-gradient(circle at bottom left, rgba(34, 197, 94, 0.1), transparent 38%),
         rgba(15, 23, 42, 0.92);
     }
 
@@ -277,6 +287,7 @@
       font-size: 0.72rem;
       border: 1px solid rgba(56, 189, 248, 0.55);
       color: var(--accent);
+      white-space: nowrap;
     }
 
     .profile-card p {
@@ -319,8 +330,6 @@
       font-size: 0.86rem;
     }
 
-    /* Sections */
-
     section {
       padding: 42px 0;
     }
@@ -330,7 +339,7 @@
       font-size: 0.73rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      font-weight: 700;
+      font-weight: 800;
       margin-bottom: 5px;
     }
 
@@ -343,15 +352,21 @@
 
     .section-intro {
       color: var(--muted);
-      max-width: 670px;
+      max-width: 760px;
       margin-bottom: 24px;
       font-size: 0.92rem;
     }
 
     .two-columns {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 22px;
+    }
+
+    .three-columns {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
     }
 
     .about-text {
@@ -372,11 +387,18 @@
       margin-bottom: 12px;
     }
 
+    .card h4 {
+      font-size: 0.88rem;
+      margin: 14px 0 8px;
+      color: white;
+    }
+
     .details p,
-    .details li {
+    .details li,
+    .card p {
       color: var(--muted);
       font-size: 0.86rem;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
 
     .profile-links {
@@ -402,16 +424,7 @@
       transform: translateY(-2px);
     }
 
-    /* Skills */
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-    }
-
-    /* Projects */
-
+    .skills-grid,
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -423,6 +436,9 @@
       color: var(--orange);
       font-size: 0.73rem;
       margin-bottom: 8px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
     }
 
     .project-card p {
@@ -431,7 +447,90 @@
       margin-bottom: 13px;
     }
 
-    /* Timeline */
+    .highlight-card {
+      border-color: rgba(56, 189, 248, 0.42);
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 42%),
+        rgba(15, 23, 42, 0.92);
+    }
+
+    .impact-card {
+      border-color: rgba(34, 197, 94, 0.32);
+      background:
+        radial-gradient(circle at top right, rgba(34, 197, 94, 0.1), transparent 40%),
+        rgba(15, 23, 42, 0.92);
+    }
+
+    .score-card {
+      padding: 22px;
+      background:
+        radial-gradient(circle at top right, rgba(250, 204, 21, 0.14), transparent 40%),
+        rgba(15, 23, 42, 0.94);
+    }
+
+    .score-main {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin: 8px 0 14px;
+    }
+
+    .score-number {
+      font-size: 3rem;
+      line-height: 1;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--yellow), var(--green));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .score-label {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .score-bar {
+      width: 100%;
+      height: 11px;
+      background: rgba(2, 6, 23, 0.75);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      margin: 12px 0 14px;
+    }
+
+    .score-fill {
+      width: 82%;
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--green), var(--yellow));
+    }
+
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .score-item {
+      background: rgba(2, 6, 23, 0.55);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .score-item strong {
+      display: block;
+      color: white;
+      font-size: 0.82rem;
+    }
+
+    .score-item span {
+      color: var(--muted);
+      font-size: 0.74rem;
+    }
 
     .timeline {
       border-left: 1px solid rgba(148, 163, 184, 0.45);
@@ -465,11 +564,12 @@
       color: var(--orange);
       font-size: 0.78rem;
       margin-bottom: 3px;
+      font-weight: 700;
     }
 
     .timeline-role {
       font-size: 0.96rem;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     .timeline-company {
@@ -478,21 +578,30 @@
       margin-bottom: 8px;
     }
 
-    .timeline ul,
-    .education-list,
-    .certificate-list {
+    ul {
       padding-left: 18px;
       color: var(--muted);
       font-size: 0.85rem;
     }
 
-    .timeline li,
-    .education-list li,
-    .certificate-list li {
+    li {
       margin-bottom: 5px;
     }
 
-    /* Contact and Footer */
+    .statement-box {
+      padding: 22px;
+      border-radius: 16px;
+      border: 1px solid rgba(56, 189, 248, 0.34);
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 45%),
+        rgba(15, 23, 42, 0.9);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .statement-box strong {
+      color: white;
+    }
 
     .contact-card {
       padding: 24px;
@@ -512,6 +621,7 @@
 
     .contact-list {
       list-style: none;
+      padding-left: 0;
     }
 
     .contact-list li {
@@ -554,13 +664,14 @@
       font-size: 0.78rem;
     }
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
       .hero,
       .two-columns,
       .contact-card {
         grid-template-columns: 1fr;
       }
 
+      .three-columns,
       .skills-grid,
       .projects-grid {
         grid-template-columns: 1fr;
@@ -581,72 +692,78 @@
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 520px) {
       .mini-skills,
-      .stats {
+      .stats,
+      .score-grid {
         grid-template-columns: 1fr;
       }
 
       h1 {
         font-size: 2.2rem;
       }
+
+      .score-number {
+        font-size: 2.6rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Navigation -->
   <header class="navbar">
     <div class="container nav-content">
       <a href="#home" class="brand">
         <div class="brand-icon"></div>
         <div>
-          <div class="brand-name">Abdoul Kader Djibo M</div>
-          <div class="brand-title">Data Analyst · AI & ML Enthusiast</div>
+          <div class="brand-name">Abdoul Kader Djibo Magagi</div>
+          <div class="brand-title">Graduate Study · Scholarship · AI for Public Good</div>
         </div>
       </a>
 
       <nav class="nav-links">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#scholarship">Scholarship</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
     <section id="home" class="container hero">
       <div>
         <div class="availability">
           <span class="availability-dot"></span>
-          Open to Data Analytics & Applied ML opportunities
+          Open to graduate study, scholarships, research, and AI/data opportunities
         </div>
 
         <h1>
-          Entry-level <span>Data Analyst & AI/ML Enthusiast</span>
+          Data Science, AI & Cybersecurity Portfolio for <span>Graduate Study</span>
         </h1>
 
         <p class="hero-text">
-          I am Abdoul Kader Djibo M, a data-focused BCA graduate based in Mysore,
-          India. I use Python, SQL, machine learning, visualization, and Streamlit
-          to transform structured data into meaningful insights and simple,
-          practical applications.
+          I am Abdoul Kader Djibo Magagi, a Computer Applications graduate from Niger
+          with hands-on experience in Python, data analytics, machine learning,
+          Streamlit dashboards, and cybersecurity-focused AI projects. My goal is to
+          use artificial intelligence and data science to support public health,
+          education, cybersecurity, and digital transformation in Niger and Africa.
         </p>
 
         <div class="hero-tags">
-          <span>Python · pandas · NumPy</span>
-          <span>SQL · MySQL</span>
+          <span>Data Science for Development</span>
+          <span>AI for Public Good</span>
           <span>Machine Learning</span>
-          <span>Streamlit Dashboards</span>
+          <span>Cybersecurity Analytics</span>
+          <span>Niger Digital Transformation</span>
         </div>
 
         <div class="button-row">
-          <a class="button button-primary" href="#projects">View My Projects</a>
-
+          <a class="button button-primary" href="#projects">View Public-Good Projects</a>
+          <a class="button button-green" href="#scholarship">Scholarship Readiness</a>
           <a
             class="button button-secondary"
             href="assets/abdoul_kader_djibo_resume.pdf"
@@ -658,90 +775,98 @@
         </div>
 
         <p class="hero-note">
-          Interested in entry-level data analyst, junior data scientist, AI/ML,
-          internship, and applied machine learning roles.
+          Target programs: Data Science, Artificial Intelligence, Machine Learning,
+          Cybersecurity, Information Systems, ICT for Development, and Health Informatics.
         </p>
       </div>
 
       <aside class="profile-card">
         <div class="profile-card-top">
-          <h3>Professional Snapshot</h3>
-          <span class="data-label">Data · ML</span>
+          <h3>Graduate Profile</h3>
+          <span class="data-label">Scholarship Ready</span>
         </div>
 
         <p>
-          Hands-on experience with Python-based analysis, supervised learning,
-          visualizations, and simple dashboards.
+          Strong public-impact direction with projects connecting AI, data analytics,
+          healthcare, education, and network security to real challenges in Niger.
         </p>
 
         <div class="mini-skills">
-          <span>Data Cleaning</span>
-          <span>Exploratory Data Analysis</span>
-          <span>Logistic Regression</span>
-          <span>Random Forest</span>
-          <span>Matplotlib & Seaborn</span>
-          <span>Streamlit</span>
-          <span>SQL & MySQL</span>
-          <span>Git & GitHub</span>
+          <span>Python Data Analysis</span>
+          <span>Machine Learning</span>
+          <span>Public Health Analytics</span>
+          <span>Education Dashboards</span>
+          <span>Network Anomaly Detection</span>
+          <span>Cybersecurity AI</span>
+          <span>Streamlit Applications</span>
+          <span>Research Motivation</span>
         </div>
 
         <div class="stats">
           <div>
-            <small>Experience</small>
-            <strong>1+ year</strong>
+            <small>Readiness Score</small>
+            <strong>82 / 100</strong>
           </div>
           <div>
-            <small>Featured Project</small>
-            <strong>Heart Disease ML</strong>
+            <small>Degree</small>
+            <strong>BCA 2026</strong>
           </div>
           <div>
-            <small>Graduated</small>
-            <strong>June 2026</strong>
+            <small>Focus</small>
+            <strong>AI for Niger</strong>
           </div>
         </div>
       </aside>
     </section>
 
-    <!-- About -->
     <section id="about">
       <div class="container">
         <div class="section-label">About Me</div>
-        <h2>Turning questions into data-driven answers.</h2>
+        <h2>A Nigerien technology graduate focused on AI, data, and public impact.</h2>
         <p class="section-intro">
-          I enjoy the complete data workflow: cleaning raw data, exploring
-          patterns, creating visualizations, building models, and presenting
-          insights clearly to technical and non-technical audiences.
+          My profile combines computer applications, data analytics, machine learning,
+          networking, cybersecurity, and a strong motivation to solve development
+          challenges through technology.
         </p>
 
         <div class="two-columns">
           <div class="about-text">
             <p>
-              I hold a Bachelor of Computer Applications from the University of
-              Mysore. My academic work and practical training have helped me
-              develop strong foundations in Python, data analytics, databases,
-              statistics, and machine learning.
+              I completed my Bachelor of Computer Applications at the University of
+              Mysore, where I built a strong foundation in programming, databases,
+              web technologies, computer networks, artificial intelligence, data
+              science, and cybersecurity.
             </p>
 
             <p>
-              My key project was an AI-driven heart disease prediction system,
-              where I prepared data, trained models, evaluated their performance,
-              and built a Streamlit interface for risk predictions. I am a quick
-              learner with a problem-solving mindset and a strong interest in
-              growing in data analytics and applied machine learning.
+              My work is focused on applied projects that can create value beyond the
+              classroom. I have developed a heart disease prediction system, a Niger
+              education and public health dashboard, and a machine learning-based
+              network anomaly detection project designed for Niger’s digital
+              infrastructure.
+            </p>
+
+            <p>
+              My long-term goal is to contribute to Niger’s digital transformation by
+              building data-driven solutions for public health monitoring, education
+              planning, cybersecurity awareness, secure networks, and evidence-based
+              decision-making.
             </p>
           </div>
 
-          <div class="card">
+          <div class="card highlight-card">
             <h3>Quick Profile</h3>
 
             <div class="details">
-              <p><strong>Location:</strong> Mysore, India</p>
+              <p><strong>Name:</strong> Abdoul Kader Djibo Magagi</p>
+              <p><strong>Nationality:</strong> Nigerien</p>
+              <p><strong>Current Location:</strong> Mysore, India</p>
               <p>
                 <strong>Email:</strong>
                 <a href="mailto:kadson82@gmail.com">kadson82@gmail.com</a>
               </p>
-              <p><strong>English:</strong> Professional Proficiency</p>
-              <p><strong>French:</strong> Fluent / Professional Proficiency</p>
+              <p><strong>Portfolio:</strong> kaderdjibo.github.io</p>
+              <p><strong>Languages:</strong> English and French</p>
             </div>
 
             <div class="profile-links">
@@ -751,7 +876,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub Profile
+                GitHub
               </a>
 
               <a
@@ -760,7 +885,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn Profile
+                LinkedIn
               </a>
 
               <a
@@ -769,7 +894,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download Resume
+                Resume PDF
               </a>
             </div>
           </div>
@@ -777,157 +902,462 @@
       </div>
     </section>
 
-    <!-- Skills -->
+    <section id="objective">
+      <div class="container">
+        <div class="section-label">Graduate Study Objective</div>
+        <h2>Focused graduate goals with clear national impact.</h2>
+
+        <div class="statement-box">
+          <p>
+            <strong>My objective</strong> is to pursue graduate study in Data Science,
+            Artificial Intelligence, Machine Learning, Cybersecurity, or Information
+            Systems. I want to gain advanced technical and research skills that can
+            be applied to real development challenges in Niger, especially in public
+            health, education, digital infrastructure, network security, and
+            data-driven public services.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="scholarship">
+      <div class="container">
+        <div class="section-label">Scholarship Readiness</div>
+        <h2>Scholarship-focused profile and readiness score.</h2>
+        <p class="section-intro">
+          My scholarship profile is built around academic commitment, international
+          study experience, public-good technology projects, and a clear plan to
+          apply graduate training to Niger’s development needs.
+        </p>
+
+        <div class="two-columns">
+          <div class="score-card">
+            <h3>Overall Scholarship Readiness Score</h3>
+
+            <div class="score-main">
+              <div class="score-number">82</div>
+              <div class="score-label">/ 100</div>
+            </div>
+
+            <div class="score-bar">
+              <div class="score-fill"></div>
+            </div>
+
+            <p>
+              Strong readiness for development-focused, technology-focused, and
+              public-impact scholarships. The strongest areas are project portfolio,
+              public impact focus, technical skills, and international adaptability.
+            </p>
+
+            <div class="score-grid">
+              <div class="score-item">
+                <strong>90 / 100</strong>
+                <span>Project Portfolio</span>
+              </div>
+              <div class="score-item">
+                <strong>90 / 100</strong>
+                <span>Public Impact Focus</span>
+              </div>
+              <div class="score-item">
+                <strong>85 / 100</strong>
+                <span>Technical Skills</span>
+              </div>
+              <div class="score-item">
+                <strong>80 / 100</strong>
+                <span>International Readiness</span>
+              </div>
+              <div class="score-item">
+                <strong>75 / 100</strong>
+                <span>Academic Background</span>
+              </div>
+              <div class="score-item">
+                <strong>70 / 100</strong>
+                <span>Research Readiness</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card impact-card">
+            <h3>Why I Am a Strong Scholarship Candidate</h3>
+            <ul>
+              <li>
+                Clear graduate direction in Data Science, AI, ML, Cybersecurity,
+                and Information Systems.
+              </li>
+              <li>
+                Public-impact projects focused on healthcare, education, public
+                health, and network security.
+              </li>
+              <li>
+                Niger-focused mission connected to national digital transformation.
+              </li>
+              <li>
+                International academic experience in India and ability to adapt to
+                multicultural learning environments.
+              </li>
+              <li>
+                Strong applied project documentation with practical tools such as
+                Python, scikit-learn, Streamlit, SQL, and dashboards.
+              </li>
+            </ul>
+
+            <h4>Best-Fit Scholarship Themes</h4>
+            <div class="tag-list">
+              <span class="tag">AI for Social Good</span>
+              <span class="tag">Data Science for Development</span>
+              <span class="tag">Cybersecurity Capacity Building</span>
+              <span class="tag">ICT for Development</span>
+              <span class="tag">African Digital Resilience</span>
+              <span class="tag">Public Health Analytics</span>
+              <span class="tag">Education Data Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">Selected Projects</div>
+        <h2>Projects aligned with graduate study and public-good scholarships.</h2>
+        <p class="section-intro">
+          These projects show my ability to build complete, practical, and
+          socially relevant technology solutions using data analytics, AI, machine
+          learning, cybersecurity concepts, and dashboards.
+        </p>
+
+        <div class="projects-grid">
+          <article class="card project-card highlight-card">
+            <div class="project-type">Healthcare AI Project</div>
+            <h3>Medical Diagnosis of Heart Disease Using Machine Learning</h3>
+            <p>
+              Built a machine learning system to predict possible heart disease
+              risk using patient health indicators from a public dataset.
+            </p>
+            <p>
+              Prepared the dataset through cleaning, exploratory data analysis,
+              feature selection, encoding, and scaling. Trained and compared
+              Logistic Regression and Random Forest models.
+            </p>
+            <p>
+              Evaluated model performance using accuracy, precision, recall,
+              F1-score, and ROC-AUC, then created a Streamlit interface for
+              user-friendly risk prediction.
+            </p>
+            <h4>Scholarship Relevance</h4>
+            <p>
+              Demonstrates my ability to apply AI and data science to healthcare
+              problems and public-good decision support.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">pandas</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Healthcare AI</span>
+            </div>
+          </article>
+
+          <article class="card project-card impact-card">
+            <div class="project-type">Niger Public-Good Analytics</div>
+            <h3>Niger Education and Public Health Dashboard</h3>
+            <p>
+              Created a public-good analytics dashboard for tracking education
+              and public health indicators across Niger’s regions.
+            </p>
+            <p>
+              Built modules for national snapshots, regional comparison, trend
+              analysis, public-good priority scoring, and AI-assisted forecasting.
+            </p>
+            <p>
+              Designed the project for potential users such as public health
+              teams, education ministries, NGOs, development partners, civic
+              technology groups, and researchers.
+            </p>
+            <h4>Scholarship Relevance</h4>
+            <p>
+              Shows my commitment to using data science for development challenges
+              in Niger, especially public health, education, and regional equity.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Streamlit</span>
+              <span class="tag">Plotly</span>
+              <span class="tag">Public Health</span>
+              <span class="tag">Education Analytics</span>
+              <span class="tag">Niger</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-type">Cybersecurity & AI Project</div>
+            <h3>Network Anomaly Detection with Machine Learning for Niger</h3>
+            <p>
+              Built a machine learning system to detect abnormal network traffic
+              using flow features such as packet count, byte count, protocol,
+              ports, and connection duration.
+            </p>
+            <p>
+              Engineered traffic behavior features including packets per second,
+              bytes per packet, and bytes per second, then trained an Isolation
+              Forest model for anomaly detection.
+            </p>
+            <p>
+              Adapted the project to Niger’s digital infrastructure context,
+              including universities, ISPs, government offices, banks, NGOs, and
+              small businesses.
+            </p>
+            <h4>Scholarship Relevance</h4>
+            <p>
+              Connects networking, cybersecurity, and AI to strengthen digital
+              resilience and local cybersecurity capacity in Niger.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Isolation Forest</span>
+              <span class="tag">Cybersecurity</span>
+              <span class="tag">Network Traffic</span>
+              <span class="tag">Python</span>
+              <span class="tag">AI for Security</span>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-type">Academic Data Science Work</div>
+            <h3>Data Analytics and Machine Learning Coursework Projects</h3>
+            <p>
+              Completed structured data analytics exercises involving data
+              cleaning, exploratory analysis, statistical summaries, visualization,
+              feature engineering, and predictive modeling.
+            </p>
+            <p>
+              Used Python, SQL, pandas, NumPy, Matplotlib, Seaborn, Streamlit, and
+              scikit-learn to build practical solutions and communicate findings.
+            </p>
+            <p>
+              Practiced writing organized project code, documenting workflows, and
+              presenting results clearly to technical and non-technical audiences.
+            </p>
+            <h4>Scholarship Relevance</h4>
+            <p>
+              Demonstrates readiness for graduate-level applied learning,
+              research projects, and data-driven problem solving.
+            </p>
+            <div class="tag-list">
+              <span class="tag">EDA</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Visualization</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">GitHub</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="skills">
       <div class="container">
         <div class="section-label">Technical Skills</div>
-        <h2>Tools I use to work with data.</h2>
+        <h2>Technical foundation for graduate study and applied research.</h2>
         <p class="section-intro">
-          I work with data preparation, exploratory analysis, machine learning,
-          evaluation metrics, visualizations, and simple interactive dashboards.
+          My skills cover data analytics, machine learning, visualization,
+          cybersecurity analytics, programming, databases, and dashboard
+          development.
         </p>
 
         <div class="skills-grid">
           <div class="card">
-            <h3>Data & Analytics</h3>
+            <h3>Data Analytics</h3>
             <div class="tag-list">
               <span class="tag">Python</span>
               <span class="tag">pandas</span>
               <span class="tag">NumPy</span>
+              <span class="tag">SQL</span>
+              <span class="tag">MySQL</span>
               <span class="tag">Data Cleaning</span>
-              <span class="tag">Missing Values</span>
-              <span class="tag">Outliers</span>
-              <span class="tag">Encoding & Scaling</span>
               <span class="tag">EDA</span>
+              <span class="tag">Feature Engineering</span>
               <span class="tag">Descriptive Statistics</span>
               <span class="tag">Correlation Analysis</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>Machine Learning</h3>
+            <h3>Machine Learning and AI</h3>
             <div class="tag-list">
               <span class="tag">Logistic Regression</span>
               <span class="tag">Random Forest</span>
+              <span class="tag">Linear Regression</span>
+              <span class="tag">Isolation Forest</span>
               <span class="tag">SVM Basics</span>
-              <span class="tag">Ensemble Methods</span>
               <span class="tag">Cross Validation</span>
               <span class="tag">GridSearch Basics</span>
-              <span class="tag">Accuracy</span>
-              <span class="tag">Precision</span>
-              <span class="tag">Recall</span>
-              <span class="tag">F1-Score</span>
+              <span class="tag">Model Evaluation</span>
               <span class="tag">ROC-AUC</span>
+              <span class="tag">F1-Score</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>Visualization & Dashboards</h3>
+            <h3>Dashboards and Visualization</h3>
             <div class="tag-list">
+              <span class="tag">Streamlit</span>
+              <span class="tag">Plotly</span>
               <span class="tag">Matplotlib</span>
               <span class="tag">Seaborn</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">Basic Dashboarding</span>
-              <span class="tag">Insight Communication</span>
+              <span class="tag">KPI Reporting</span>
+              <span class="tag">Trend Analysis</span>
+              <span class="tag">Regional Comparison</span>
+              <span class="tag">Forecasting Dashboards</span>
             </div>
           </div>
 
           <div class="card">
-            <h3>Software & Tools</h3>
+            <h3>Cybersecurity and Networking</h3>
             <div class="tag-list">
-              <span class="tag">SQL</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Jupyter Notebook</span>
-              <span class="tag">VS Code</span>
+              <span class="tag">Network Traffic Analysis</span>
+              <span class="tag">Packet Count</span>
+              <span class="tag">Byte Count</span>
+              <span class="tag">Protocols</span>
+              <span class="tag">Ports</span>
+              <span class="tag">Anomaly Detection</span>
+              <span class="tag">Computer Networks</span>
+              <span class="tag">Digital Infrastructure</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Software and Web Tools</h3>
+            <div class="tag-list">
               <span class="tag">Git</span>
               <span class="tag">GitHub</span>
+              <span class="tag">Jupyter Notebook</span>
+              <span class="tag">VS Code</span>
               <span class="tag">HTML</span>
               <span class="tag">CSS</span>
               <span class="tag">JavaScript Basics</span>
-              <span class="tag">C / C++ / Java Basics</span>
+              <span class="tag">PHP Basics</span>
+              <span class="tag">Flask Basics</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Graduate Study Interests</h3>
+            <div class="tag-list">
+              <span class="tag">Data Science</span>
+              <span class="tag">Artificial Intelligence</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">Cybersecurity</span>
+              <span class="tag">Information Systems</span>
+              <span class="tag">ICT for Development</span>
+              <span class="tag">Health Informatics</span>
+              <span class="tag">Public Interest Technology</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
+    <section id="education">
       <div class="container">
-        <div class="section-label">Projects</div>
-        <h2>Applying machine learning to practical problems.</h2>
-        <p class="section-intro">
-          Projects focused on data preparation, supervised machine learning,
-          evaluation, visualization, and user-friendly deployment.
-        </p>
+        <div class="section-label">Education</div>
+        <h2>Academic background in computer applications, data, AI, and networks.</h2>
 
-        <div class="projects-grid">
-          <article class="card project-card">
-            <div class="project-type">Featured Machine Learning Project</div>
-            <h3>Medical Diagnosis of Heart Disease Using Machine Learning</h3>
-            <p>
-              Prepared and analyzed the UCI Heart Disease Dataset using Python,
-              pandas, and NumPy. The work included exploratory data analysis,
-              feature selection, encoding, scaling, and data preparation.
-            </p>
-            <p>
-              Trained and compared Logistic Regression and Random Forest models
-              to predict heart disease. The models achieved approximately 90%+
-              accuracy with strong recall for positive cases.
-            </p>
-            <p>
-              Evaluated performance with accuracy, precision, recall, F1-score,
-              and ROC-AUC. Built a Streamlit interface where users can enter
-              patient data and receive a risk prediction.
-            </p>
-            <div class="tag-list">
-              <span class="tag">Python</span>
-              <span class="tag">scikit-learn</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">Random Forest</span>
-              <span class="tag">Logistic Regression</span>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Graduated: June 2026</div>
+            <div class="timeline-role">Bachelor of Computer Applications</div>
+            <div class="timeline-company">
+              University of Mysore – Vidhyaashram First Grade College, Mysore, India
             </div>
+            <ul>
+              <li>Final result: Passed.</li>
+              <li>Final CGPA: 6.76.</li>
+              <li>Final semester SGPA: 8.58.</li>
+              <li>
+                Relevant coursework: Artificial Intelligence and Applications,
+                Fundamentals of Data Science, Database Management Systems,
+                Computer Networks, Cyber Security, Cloud Computing, Statistical
+                Computing and R Programming, Web Technologies, and Software Engineering.
+              </li>
+            </ul>
           </article>
 
-          <article class="card project-card">
-            <div class="project-type">Academic & Practical Data Work</div>
-            <h3>Data Analytics & Machine Learning Coursework Projects</h3>
-            <p>
-              Worked with structured datasets to clean data, handle missing
-              values and outliers, explore feature relationships, and identify
-              useful patterns through exploratory data analysis.
-            </p>
-            <p>
-              Built supervised learning models, applied basic cross-validation
-              and hyperparameter tuning, and communicated findings through
-              Matplotlib, Seaborn, and simple Streamlit dashboards.
-            </p>
-            <p>
-              Used Git and GitHub to maintain organized and reproducible project
-              code, with emphasis on readable analysis and understandable
-              conclusions.
-            </p>
-            <div class="tag-list">
-              <span class="tag">EDA</span>
-              <span class="tag">Data Cleaning</span>
-              <span class="tag">Visualization</span>
-              <span class="tag">Cross Validation</span>
-              <span class="tag">GitHub</span>
+          <article class="timeline-item">
+            <div class="timeline-date">Completed: June 2012</div>
+            <div class="timeline-role">Vocational Competence Diploma in Computing Maintenance</div>
+            <div class="timeline-company">
+              Training Center in Techniques of Computing and Management, CEFOR, Agadez, Niger
             </div>
+            <ul>
+              <li>Grade: Good.</li>
+              <li>
+                Relevant subjects included Computer Science, Programming, Electronics,
+                Automatism, Measurement and Tests, Mathematics, English, and French.
+              </li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Completed: December 2007</div>
+            <div class="timeline-role">Technician Diploma in Telecommunication Systems</div>
+            <div class="timeline-company">Winteck Professional Institute</div>
+            <ul>
+              <li>
+                Training covered fundamental electronics, communication systems,
+                digital networks, and basic practical networking.
+              </li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Experience -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-label">Certifications and Training</div>
+        <h2>Continuous learning in Python, AI, data science, and software development.</h2>
+
+        <div class="three-columns">
+          <div class="card">
+            <h3>Data and AI Training</h3>
+            <ul>
+              <li>Industrial-oriented Python Programming course.</li>
+              <li>Practical course in Data Analysis and Data Science.</li>
+              <li>Be 10X AI Course: applied AI tools and workflows.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>AI and SQL Certifications</h3>
+            <ul>
+              <li>SQL Using AI Workshop by AI For Techies, issued June 9, 2025.</li>
+              <li>
+                Certified AI-Driven Professional, AI Career Accelerator Inner Circle
+                Program, presented January 23, 2026.
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Software Experience</h3>
+            <ul>
+              <li>
+                Internship Completion Certificate: Software Development Intern,
+                Cognifyz Technologies.
+              </li>
+              <li>
+                Practical experience in Python coding, debugging, workflows, and
+                version control.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="experience">
       <div class="container">
         <div class="section-label">Experience</div>
-        <h2>Programming, analytics, and practical project experience.</h2>
-        <p class="section-intro">
-          I have strengthened my skills through a software development internship
-          and hands-on academic data analytics and machine learning work.
-        </p>
+        <h2>Practical programming and project experience.</h2>
 
         <div class="timeline">
           <article class="timeline-item">
@@ -936,38 +1366,36 @@
             <div class="timeline-company">Cognifyz Technologies · Remote</div>
             <ul>
               <li>
-                Completed a structured internship focused on practical
-                programming and software development fundamentals.
+                Completed a structured internship focused on practical programming
+                and software development fundamentals.
               </li>
               <li>
-                Wrote, tested, and debugged Python programs, strengthening
-                logic-building, code quality, and best practices.
+                Wrote, tested, and debugged Python programs, improving logic-building,
+                code quality, and adherence to best practices.
               </li>
               <li>
-                Participated in training on development workflows, debugging,
-                version control, and clean reproducible code.
+                Participated in training sessions on modern development workflows,
+                debugging, version control, and reproducible coding practices.
               </li>
             </ul>
           </article>
 
           <article class="timeline-item">
             <div class="timeline-date">2025 – 2026</div>
-            <div class="timeline-role">
-              Academic & Project Experience — Data Analytics & Machine Learning
-            </div>
-            <div class="timeline-company">University & Independent Projects</div>
+            <div class="timeline-role">Academic and Project Experience</div>
+            <div class="timeline-company">Data Analytics and Machine Learning</div>
             <ul>
               <li>
-                Performed data cleaning, feature engineering, and exploratory
-                data analysis using Python, pandas, and NumPy.
+                Performed data cleaning, feature engineering, and exploratory data
+                analysis using Python, pandas, and NumPy.
               </li>
               <li>
-                Built and evaluated Logistic Regression and Random Forest models
-                using scikit-learn.
+                Built and evaluated supervised and unsupervised machine learning
+                models using scikit-learn.
               </li>
               <li>
-                Created visualizations with Matplotlib and Seaborn, plus simple
-                Streamlit dashboards for communicating findings.
+                Created visualizations and dashboards using Matplotlib, Seaborn,
+                Plotly, and Streamlit to communicate insights clearly.
               </li>
             </ul>
           </article>
@@ -975,71 +1403,67 @@
       </div>
     </section>
 
-    <!-- Education -->
-    <section id="education">
+    <section id="impact">
       <div class="container">
-        <div class="section-label">Education & Certifications</div>
-        <h2>Computer applications background with data-focused training.</h2>
+        <div class="section-label">Public Impact Mission</div>
+        <h2>How I want to use graduate study for Niger.</h2>
 
-        <div class="two-columns">
-          <div class="card">
-            <h3>Bachelor of Computer Applications (BCA)</h3>
-            <div class="details">
-              <p>University of Mysore – Vidhyaashram First Grade College, Mysore</p>
-              <p><strong>Graduated:</strong> June 2026</p>
-            </div>
-
-            <ul class="education-list">
-              <li>Data Structures and Algorithms</li>
-              <li>Database Management Systems</li>
-              <li>Web Technologies</li>
-              <li>Operating Systems and Computer Networks</li>
-              <li>Software Engineering</li>
-              <li>Data Analytics</li>
-              <li>Machine Learning (project-based)</li>
-              <li>Statistics for Computing</li>
-            </ul>
+        <div class="three-columns">
+          <div class="card impact-card">
+            <h3>Public Health Analytics</h3>
+            <p>
+              I want to build dashboards and AI-assisted tools that help track
+              disease patterns, health access, mortality indicators, and resource
+              needs across Niger’s regions.
+            </p>
           </div>
 
-          <div class="card">
-            <h3>Certifications & Training</h3>
-            <ul class="certificate-list">
-              <li>Industrial-oriented Python Programming course</li>
-              <li>Practical course in Data Analysis & Data Science</li>
-              <li>Be 10X AI Course – applied AI tools and workflows</li>
-              <li>
-                Internship Completion Certificate – Software Development Intern,
-                Cognifyz Technologies
-              </li>
-            </ul>
-
-            <h3 style="margin-top: 20px;">Professional Strengths</h3>
-            <ul class="certificate-list">
-              <li>Strong analytical and problem-solving mindset</li>
-              <li>Quick learner with high interest in data analytics and ML</li>
-              <li>Comfortable presenting findings to non-technical audiences</li>
-              <li>Reliable, professional, and proactive</li>
-            </ul>
+          <div class="card impact-card">
+            <h3>Education Data Systems</h3>
+            <p>
+              I want to support education planning through data systems that monitor
+              enrollment, literacy, dropout rates, teacher needs, and regional gaps.
+            </p>
           </div>
+
+          <div class="card impact-card">
+            <h3>Cybersecurity Capacity</h3>
+            <p>
+              I want to help strengthen Niger’s digital infrastructure by applying
+              machine learning to network monitoring, anomaly detection, and
+              cybersecurity awareness.
+            </p>
+          </div>
+        </div>
+
+        <div style="height: 18px;"></div>
+
+        <div class="statement-box">
+          <p>
+            <strong>Portfolio statement:</strong> This portfolio represents my goal
+            to become a graduate student and future technology professional who uses
+            data science, artificial intelligence, and cybersecurity to solve
+            real-world problems in Niger and contribute to Africa’s digital future.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
       <div class="container">
         <div class="section-label">Contact</div>
-        <h2>Let’s connect.</h2>
+        <h2>Let’s connect for scholarships, graduate study, and collaborations.</h2>
         <p class="section-intro">
-          I am open to entry-level roles, internships, collaborations, and
-          conversations related to data analytics, data science, and applied ML.
+          I am open to graduate study opportunities, scholarship programs, research
+          collaborations, internships, entry-level roles, and public-good technology
+          projects.
         </p>
 
         <div class="contact-card">
           <div>
             <p>
-              Recruiters and hiring managers can contact me directly by email or
-              visit my professional profiles using the links on this portfolio.
+              Scholarship committees, professors, recruiters, NGOs, and collaborators
+              can contact me directly by email or visit my professional profiles.
             </p>
 
             <div class="button-row">
@@ -1054,6 +1478,15 @@
                 rel="noopener noreferrer"
               >
                 Open LinkedIn
+              </a>
+
+              <a
+                class="button button-green"
+                href="https://github.com/kaderDjibo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open GitHub
               </a>
             </div>
           </div>
@@ -1084,13 +1517,14 @@
               </a>
             </li>
             <li><strong>Location:</strong> Mysore, India</li>
+            <li><strong>Nationality:</strong> Nigerien</li>
+            <li><strong>Languages:</strong> English and French</li>
           </ul>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer: 12 recruiter-friendly clickable links -->
   <footer>
     <div class="container">
       <div class="footer-links">
@@ -1118,44 +1552,18 @@
           Resume PDF
         </a>
 
-        <!-- Change "your-kaggle-username" after creating your Kaggle account -->
-        <a
-          href="https://www.kaggle.com/your-kaggle-username"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Kaggle
-        </a>
-
-        <!-- Change "your-huggingface-username" after creating your Hugging Face account -->
-        <a
-          href="https://huggingface.co/your-huggingface-username"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hugging Face
-        </a>
-
-        <!-- Replace this with your specific Indeed public profile link when available -->
-        <a
-          href="https://www.indeed.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Indeed
-        </a>
-
         <a href="mailto:kadson82@gmail.com">Email</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
+        <a href="#scholarship">Scholarship</a>
         <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#education">Education</a>
+        <a href="#impact">Public Impact</a>
         <a href="#contact">Contact</a>
       </div>
 
       <p class="copyright">
-        © 2026 Abdoul Kader Djibo M · Data Analyst & AI/ML Enthusiast
+        © 2026 Abdoul Kader Djibo Magagi · Graduate Study & Scholarship Portfolio · Data Science, AI, and Cybersecurity for Niger
       </p>
     </div>
   </footer>
